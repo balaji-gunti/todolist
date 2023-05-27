@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
-import Header from './components/Header';
-import Form from './components/form';
-import Todolist from './components/Todolist';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Form from "./components/form";
+import Todolist from "./components/Todolist";
 
 const App = () => {
-
   const initialState = JSON.parse(localStorage.getItem("todos")) || [];
   const [input, setInput] = useState("");
   const [todos, setTodos] = useState(initialState);
